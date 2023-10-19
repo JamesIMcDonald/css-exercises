@@ -1,8 +1,13 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
 }
-
+/* this solves the problem as the solution looks because its only 3 main elements so justify space between pushes them away 
+and then from there the contents of those flex lists are normally done  */
 .logo {
   font-size: 48px;
   font-weight: 900;
@@ -14,6 +19,10 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+
+  gap: 0.5em;
+  flex: 0 0 auto;
 }
 
 a {
@@ -23,3 +32,4 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
